@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/favourites_menu"
+        android:enabled="true"
+        android:title="@string/favourites_menu_title"
+        android:icon="@drawable/favourites_star"/>
+
+    <item
+        android:id="@+id/all_known_menu"
+        android:enabled="true"
+        android:title="@string/all_menu_title"
+        android:icon="@drawable/all_icon"/>
+
+</menu>
