@@ -1,5 +1,9 @@
 package com.novemberclass.cheatsheet
 
-class Boss (position: String, rank: String, lastName: String,
-            name: String, photoAdress: String) {
-}
+data class Boss (
+    val position: String,
+    val rank: String,
+    val lastName: String,
+    val name: String,
+    val photoAdress: Int
+)

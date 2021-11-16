@@ -3,6 +3,8 @@ package com.novemberclass.cheatsheet
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -15,8 +17,18 @@ class MainActivity : AppCompatActivity() {
 
         bottomMenu = findViewById(R.id.bottom_panel)
 
-        bottomMenu.setOnItemSelectedListener { item ->
+        val allKnownFragment: AllKnownFragment = AllKnownFragment()
+        replaceFragment (allKnownFragment)
 
+
+        //val bossRecyclerView: RecyclerView = findViewById(R.id.boss_recycler_view)
+
+      //  bossRecyclerView.layoutManager =
+      //      LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+      //  bossRecyclerView.adapter = BossAdapter(bossNameList)
+
+
+        bottomMenu.setOnItemSelectedListener { item ->
             when(item.itemId) {
 
                 R.id.favourites_menu -> {
