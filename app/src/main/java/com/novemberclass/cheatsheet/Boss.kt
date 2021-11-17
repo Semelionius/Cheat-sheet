@@ -5,5 +5,5 @@ data class Boss (
     val rank: String,
     val lastName: String,
     val name: String,
-    val photoAdress: Int
+    val photo: Int
 )

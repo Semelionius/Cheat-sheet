@@ -21,13 +21,6 @@ class MainActivity : AppCompatActivity() {
         replaceFragment (allKnownFragment)
 
 
-        //val bossRecyclerView: RecyclerView = findViewById(R.id.boss_recycler_view)
-
-      //  bossRecyclerView.layoutManager =
-      //      LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-      //  bossRecyclerView.adapter = BossAdapter(bossNameList)
-
-
         bottomMenu.setOnItemSelectedListener { item ->
             when(item.itemId) {
 

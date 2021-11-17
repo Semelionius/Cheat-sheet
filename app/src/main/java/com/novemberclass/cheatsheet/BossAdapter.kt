@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class BossAdapter(private val bossNameList: List<String>) : RecyclerView.Adapter<BossViewHolder>() {
+class BossAdapter(private val bossesList: List<Boss>) : RecyclerView.Adapter<BossViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BossViewHolder {
 
@@ -16,11 +16,22 @@ class BossAdapter(private val bossNameList: List<String>) : RecyclerView.Adapter
     }
 
     override fun onBindViewHolder(holder: BossViewHolder, position: Int) {
-        val bossName = bossNameList[position]
-        holder.bind(bossName)
+
+        val bossPhoto = bossesList[position].photo
+        holder.bindPhoto(bossPhoto)
+
+        val bossPosition = bossesList[position].position
+        holder.bindPosition(bossPosition)
+
+        val bossRank = bossesList[position].rank
+        holder.bindRank(bossRank)
+
+        val bossLastname = bossesList[position].lastName
+        holder.bindLastname(bossLastname)
     }
 
+
     override fun getItemCount(): Int {
-        return bossNameList.size
+        return bossesList.size
     }
 }

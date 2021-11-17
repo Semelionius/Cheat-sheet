@@ -16,15 +16,13 @@ class AllKnownFragment : Fragment() {
     ): View? {
 
 
-        val bossNameList = listOf( "asdf", "vnvxvc df", "tyurty Vdfg", "Duho Oljh" )
-
         val recyclerViewToReturn =  inflater.inflate(R.layout.fragment_all_known, container, false)
 
         val bossRecyclerView: RecyclerView = recyclerViewToReturn.findViewById(R.id.boss_recycler_view)
 
           bossRecyclerView.layoutManager = LinearLayoutManager(context)
 
-          bossRecyclerView.adapter = BossAdapter(bossNameList)
+          bossRecyclerView.adapter = BossAdapter(bossesList)
 
         return recyclerViewToReturn
     }
