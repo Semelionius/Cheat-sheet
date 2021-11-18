@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class BossViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView) {
 
+
     fun bindPhoto(bossPhoto: Int){
         val bossPhotoImageView: ImageView = itemView.findViewById(R.id.boss_photo_image_view)
         bossPhotoImageView.setImageResource(bossPhoto)

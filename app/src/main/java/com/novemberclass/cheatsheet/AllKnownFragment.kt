@@ -1,5 +1,6 @@
 package com.novemberclass.cheatsheet
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -15,6 +16,8 @@ class AllKnownFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        val pref = requireActivity().getSharedPreferences("kotlincodes", Context.MODE_PRIVATE)
+        val pfotoPrefState = pref?.getBoolean("photo", true)
 
         val recyclerViewToReturn =  inflater.inflate(R.layout.fragment_all_known, container, false)
 

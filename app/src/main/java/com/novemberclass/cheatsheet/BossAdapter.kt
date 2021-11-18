@@ -3,10 +3,12 @@ package com.novemberclass.cheatsheet
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.novemberclass.cheatsheet.R.id.photo_switch
 
 class BossAdapter(private val bossesList: List<Boss>) : RecyclerView.Adapter<BossViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BossViewHolder {
+
 
         val bossItemView =
             LayoutInflater.from(parent.context).inflate(
@@ -16,6 +18,7 @@ class BossAdapter(private val bossesList: List<Boss>) : RecyclerView.Adapter<Bos
     }
 
     override fun onBindViewHolder(holder: BossViewHolder, position: Int) {
+
 
         val bossPhoto = bossesList[position].photo
         holder.bindPhoto(bossPhoto)

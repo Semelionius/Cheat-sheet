@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">Bosses Cheat sheet</string>
+    <string name="app_name">Шпаргалка с начальниками</string>
     <string name="favourites_menu_title">Избранные</string>
     <string name="allKnown_fragment_text">All known</string>
-    <string name="all_menu_title">Все</string>
+    <string name="all_menu_title">Офлайн</string>
+    <string name="sourse_intent_menu_title">На сайте</string>
+    <string name="settings_menu_title">Настройки</string>
+    <string name="settings_top_text">Какие пункты отображать?</string>
+    <string name="photo_switch_text">Фото</string>
+    <string name="position_switch_text">Должность</string>
+    <string name="rank_switch_text">Звание</string>
+    <string name="name_switch_text">Имя и Отчество</string>
 </resources>
